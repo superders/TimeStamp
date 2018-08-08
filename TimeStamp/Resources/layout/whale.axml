@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+              android:background="#000"
+    android:id="@+id/linearLayout1">
+  <ImageButton
+      android:src="@drawable/whale"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#000"
+      android:id="@+id/imageButton1" />
+  <ScrollView
+    android:id="@+id/ScrollView02"
+    android:layout_width="fill_parent"
+    android:layout_height="800px">
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+      <ListView
+          android:minWidth="25px"
+          android:minHeight="800px"
+          android:layout_width="match_parent"
+          android:layout_height="800px"
+          android:id="@+id/momentList" />
+    </RelativeLayout>
+  </ScrollView>
+  <Button
+    android:text="Clear List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnClear"
+    />
+</LinearLayout>
